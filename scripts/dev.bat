@@ -1,0 +1,11 @@
+set NODE_ENV=dev
+set DEBUG=app:logger
+set APP_SECRETKEY=This_is_the_Real_Secret_Key
+set DB_NAME=stockit
+set DB_USERNAME=maiora
+set DB_PASSWORD=Madmin@6977
+set SENDGRID_API_KEY=''
+set EMAIL_ADDRESS=yesho@maiora.co
+set EMAIL_PASSWORD=Madmin@123
+set EMAIL_PROVIDER=outlook
+set TZ=Asia/Calcutta

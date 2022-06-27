@@ -1,0 +1,29 @@
+{
+    "db": [
+            {
+                "type": "mysql",
+                "host": "13.126.110.70",
+                "database": "dbName",
+                "username": "dbUsername",
+                "password": "dbPassword"
+            }
+        ],
+    "app": {
+        "domain": "13.127.115.135",
+        "host": "13.127.115.135",
+        "port": 8981,
+        "defaultLogger": "app:logger",
+        "secretKey": "secretKey",
+        "tokenNameInRequests": "x-maiora-auth-token"
+    },
+    "mail": {
+        "sender": "The Stockit <ashritha.shetty@maiora.co>",
+        "emailAddress": "emailAddress",
+        "emailPassword": "emailPassword",
+        "emailProvider": "emailProvider"
+    },
+    "maintainers": [
+        "ashritha.shetty@maiora.co",
+        "nandini.a@maiora.co"
+    ]
+}

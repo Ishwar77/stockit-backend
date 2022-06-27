@@ -1,0 +1,14 @@
+nohup.out
+/node_modules
+/coverage
+
+
+
+# ignore files in folder uploads
+#uploads/*
+
+# but keep the folder
+!uploads/.keep
+/logs
+/logs/*
+/uploads

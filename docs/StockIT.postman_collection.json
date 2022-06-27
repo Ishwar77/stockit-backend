@@ -1,0 +1,1389 @@
+{
+	"info": {
+		"_postman_id": "3b5768bd-9378-4414-b70f-9f43320ea14f",
+		"name": "StockIT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Get all Users",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/users",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User on ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/users/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User on UUID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/users/uuid/047f7d9e04ba455b99ef6148d9dc8348bf2c4aed6bf842e1e225abd53ec1a63b",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"uuid",
+								"047f7d9e04ba455b99ef6148d9dc8348bf2c4aed6bf842e1e225abd53ec1a63b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Creating/Registration of a User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_role\": \"USER\", \r\n    \"user_name\": \"userName 2\", \r\n    \"mobile_number\": \"9076503210\", \r\n    \"email_id\": \"userName2@gmail.com\", \r\n    \"password\": \"userName2Password\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/users",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users"
+							]
+						},
+						"description": "{\r\n    \"user_role\": \"ADMIN\", \r\n    \"user_name\": \"adminName\", \r\n    \"mobile_number\": \"9876543210\", \r\n    \"email_id\": \"adminName@gmail.com\", \r\n    \"password\": \"adminNamePassword\"\r\n}"
+					},
+					"response": []
+				},
+				{
+					"name": "Updating User on ID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_name\": \"userName1\", \r\n    \"mobile_number\": \"9076503210\", \r\n    \"email_id\": \"userName2@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/users/2",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Updating User on UUID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_name\": \"userName 1\", \r\n    \"mobile_number\": \"9076503210\", \r\n    \"email_id\": \"userName2@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/users/updateonuuid/93928dea65a22c9f82c7cb21d1d7439dc367ad42a9e82b8b5d1926df2785f57e",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"updateonuuid",
+								"93928dea65a22c9f82c7cb21d1d7439dc367ad42a9e82b8b5d1926df2785f57e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deleting User on ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_name\": \"userName 1\", \r\n    \"mobile_number\": \"9076503210\", \r\n    \"email_id\": \"userName2@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/users/2",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deleting User on UUID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_name\": \"userName 1\", \r\n    \"mobile_number\": \"9076503210\", \r\n    \"email_id\": \"userName2@gmail.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/users/deleteonuuid/93928dea65a22c9f82c7cb21d1d7439dc367ad42a9e82b8b5d1926df2785f57e",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"deleteonuuid",
+								"93928dea65a22c9f82c7cb21d1d7439dc367ad42a9e82b8b5d1926df2785f57e"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LOGIN",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_name\": \"adminName\",\r\n    \"password\": \"adminNamePassword\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/users/login",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Store",
+			"item": [
+				{
+					"name": "Get all Stores",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/stores",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"stores"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Stores on ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/stores/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"stores",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Stores on UUID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/stores/uuid/97c22693f589d4734088d63df760e680c8175c84be4a2d11e3aeacf3878b13fd",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"stores",
+								"uuid",
+								"97c22693f589d4734088d63df760e680c8175c84be4a2d11e3aeacf3878b13fd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Creating a Store",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"user_id\": 2,\r\n    \"store_name\": \"D-Mart\",\r\n    \"store_address\": \"Kattriguppe, Bangalore\",\r\n    \"store_shares\": \"50\",\r\n    \"store_sales_progress\": \"Raising Demand\",\r\n    \"store_availability\": \"High Demand\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/stores",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"stores"
+							]
+						},
+						"description": "{\r\n    \"user_id\": 2,\r\n    \"store_name\": \"D-Mart\",\r\n    \"store_address\": \"Kattriguppe, Bangalore\",\r\n    \"store_shares\": \"50\",\r\n    \"store_sales_progress\": \"Raising Demand\",\r\n    \"store_availability\": \"High Demand\"\r\n}"
+					},
+					"response": []
+				},
+				{
+					"name": "Updating a Store on ID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"store_address\": \"Kattriguppe, Bangalore\",\r\n    \"store_shares\": \"50\",\r\n    \"store_sales_progress\": \"Raising Demand\",\r\n    \"store_availability\": \"High Demand\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/stores/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"stores",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Updating a Store on UUID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"store_address\": \"Kattriguppe, Bangalore\",\r\n    \"store_shares\": \"50\",\r\n    \"store_sales_progress\": \"Raising Demand\",\r\n    \"store_availability\": \"High Demand\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/stores/updateonuuid/97c22693f589d4734088d63df760e680c8175c84be4a2d11e3aeacf3878b13fd",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"stores",
+								"updateonuuid",
+								"97c22693f589d4734088d63df760e680c8175c84be4a2d11e3aeacf3878b13fd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a Store on ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/stores/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"stores",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a Store on UUID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/stores/deleteonuuid/97c22693f589d4734088d63df760e680c8175c84be4a2d11e3aeacf3878b13fd",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"stores",
+								"deleteonuuid",
+								"97c22693f589d4734088d63df760e680c8175c84be4a2d11e3aeacf3878b13fd"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Brand",
+			"item": [
+				{
+					"name": "Get all Brands",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/brand",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"brand"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Brands on ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/brand/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"brand",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Brands on UUID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/brand/uuid/ec5d12f0d8ff3a7f26b4e1d75b41fef847a16ae8fa87368302e75e51f6f3a19b",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"brand",
+								"uuid",
+								"ec5d12f0d8ff3a7f26b4e1d75b41fef847a16ae8fa87368302e75e51f6f3a19b"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Creating Brand",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"store_id\": 1, \r\n    \"brand_name\": \"Himalaya\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/brand/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"brand",
+								""
+							]
+						},
+						"description": "{\r\n    \"store_id\": 1, \r\n    \"brand_name\": \"Himalaya\"\r\n}"
+					},
+					"response": []
+				},
+				{
+					"name": "Updating Brands on ID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"brand_name\": \"Himalayas\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/brand/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"brand",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Updating Brands on UUID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"brand_name\": \"Himalaya\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/brand/updateonuuid/72ddac12f60e4ba82dd1cd2c47494c6f3ddb43e9b8e9a4e1d90045215b85acd3",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"brand",
+								"updateonuuid",
+								"72ddac12f60e4ba82dd1cd2c47494c6f3ddb43e9b8e9a4e1d90045215b85acd3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deleting Brands on ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/brand/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"brand",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deleting Brands on UUID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/brand/deleteonuuid/72ddac12f60e4ba82dd1cd2c47494c6f3ddb43e9b8e9a4e1d90045215b85acd3",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"brand",
+								"deleteonuuid",
+								"72ddac12f60e4ba82dd1cd2c47494c6f3ddb43e9b8e9a4e1d90045215b85acd3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Task",
+			"item": [
+				{
+					"name": "Get all Tasks",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/tasks",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Tasks on ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/tasks/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tasks",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all Tasks on UUID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/tasks/uuid/ef83aca233d023758505b7154e009686b1c3b3bf7f25dd091b477f0a3fd3526a",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tasks",
+								"uuid",
+								"ef83aca233d023758505b7154e009686b1c3b3bf7f25dd091b477f0a3fd3526a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Creating a Task",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"store_id\": 1,\r\n    \"task_name\": \"Refill\",\r\n    \"task_description\": \"Refill the items in Shelf 2\",\r\n    \"assigned_to\": \"Antony\",\r\n    \"status\": \"Assigned\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/tasks",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tasks"
+							]
+						},
+						"description": "{\r\n    \"store_id\": 1,\r\n    \"task_name\": \"Refill\",\r\n    \"task_description\": \"Refill the items in Shelf 2\",\r\n    \"assigned_to\": \"Antony\",\r\n    \"status\": \"Assigned\"\r\n}"
+					},
+					"response": []
+				},
+				{
+					"name": "Updating a Task on ID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"task_name\": \"Refill\",\r\n    \"task_description\": \"Refill the items in Shelf 2\",\r\n    \"assigned_to\": \"Antony\",\r\n    \"status\": \"Assigned\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/tasks/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tasks",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Updating a Task on UUID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"task_name\": \"Refill\",\r\n    \"task_description\": \"Refill the items in Shelf 2\",\r\n    \"assigned_to\": \"Antony\",\r\n    \"status\": \"Assigned\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/tasks/updateonuuid/ef83aca233d023758505b7154e009686b1c3b3bf7f25dd091b477f0a3fd3526a",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tasks",
+								"updateonuuid",
+								"ef83aca233d023758505b7154e009686b1c3b3bf7f25dd091b477f0a3fd3526a"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Task on ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/tasks/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tasks",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Task on UUID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/tasks/deleteonuuid/ef83aca233d023758505b7154e009686b1c3b3bf7f25dd091b477f0a3fd3526a",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"tasks",
+								"deleteonuuid",
+								"ef83aca233d023758505b7154e009686b1c3b3bf7f25dd091b477f0a3fd3526a"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Category",
+			"item": [
+				{
+					"name": "Get all Categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/category",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Categories on ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/category/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"category",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Categories on UUID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/category/uuid/74ca5b26b5d61c731fa596f4ea840c83df12dcfe53fd48968009a587256f4095",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"category",
+								"uuid",
+								"74ca5b26b5d61c731fa596f4ea840c83df12dcfe53fd48968009a587256f4095"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Creating a Category",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"brand_id\": 1,\r\n    \"category_name\": \"Hair Care\",\r\n    \"brand_score\": \"50\",\r\n    \"brand_osa\": \"50\",\r\n    \"others\": \"10\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/category",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"category"
+							]
+						},
+						"description": "{\r\n    \"brand_id\": 1,\r\n    \"category_name\": \"Hair Care\",\r\n    \"brand_score\": \"50\",\r\n    \"brand_osa\": \"50\",\r\n    \"others\": \"10\"\r\n}"
+					},
+					"response": []
+				},
+				{
+					"name": "Updating Category on ID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"brand_score\": \"50\",\r\n    \"brand_osa\": \"50\",\r\n    \"others\": \"10\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/category/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"category",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Updating Category on UUID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"brand_score\": \"50\",\r\n    \"brand_osa\": \"50\",\r\n    \"others\": \"10\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/category/updateonuuid/74ca5b26b5d61c731fa596f4ea840c83df12dcfe53fd48968009a587256f4095",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"category",
+								"updateonuuid",
+								"74ca5b26b5d61c731fa596f4ea840c83df12dcfe53fd48968009a587256f4095"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Category on ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/category/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"category",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Category on UUID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/category/deleteonuuid/74ca5b26b5d61c731fa596f4ea840c83df12dcfe53fd48968009a587256f4095",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"category",
+								"deleteonuuid",
+								"74ca5b26b5d61c731fa596f4ea840c83df12dcfe53fd48968009a587256f4095"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Get All Products",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/products",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Products on ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/products/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Products on UUID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/products/uuid/76487764873643643",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"uuid",
+								"76487764873643643"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Creating Products",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"category_id\": 1,\r\n    \"product_name\": \"Sunsilk\",\r\n    \"product_availability\": \"100\",\r\n    \"product_brand_share\": \"50\",\r\n    \"product_consumer_interest\": \"30\",\r\n    \"product_reason_for_unavailability\": \"N/A\",\r\n    \"product_osa_percentage\": \"50\",\r\n    \"product_rcl\": \"N/A\",\r\n    \"product_opportunity\": \"Limited\",\r\n    \"product_image\": \"https://m.media-amazon.com/images/I/51jujeG+enL._SX679_.jpg\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/products",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"products"
+							]
+						},
+						"description": "{\r\n    \"category_id\": 1,\r\n    \"product_name\": \"Sunsilk\",\r\n    \"product_availability\": \"100\",\r\n    \"product_brand_share\": \"50\",\r\n    \"product_consumer_interest\": \"30\",\r\n    \"product_reason_for_unavailability\": \"N/A\",\r\n    \"product_osa_percentage\": \"50\",\r\n    \"product_rcl\": \"N/A\",\r\n    \"product_opportunity\": \"Limited\"\r\n}"
+					},
+					"response": []
+				},
+				{
+					"name": "Updating Product on ID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product_availability\": \"100\",\r\n    \"product_brand_share\": \"50\",\r\n    \"product_consumer_interest\": \"30\",\r\n    \"product_reason_for_unavailability\": \"N/A\",\r\n    \"product_osa_percentage\": \"50\",\r\n    \"product_rcl\": \"N/A\",\r\n    \"product_opportunity\": \"Limited\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/products/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Updating Product on UUID",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"product_availability\": \"100\",\r\n    \"product_brand_share\": \"50\",\r\n    \"product_consumer_interest\": \"30\",\r\n    \"product_reason_for_unavailability\": \"N/A\",\r\n    \"product_osa_percentage\": \"50\",\r\n    \"product_rcl\": \"N/A\",\r\n    \"product_opportunity\": \"Limited\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/products/updateonuuid/f1bd757ee14cb01fa769fd94c1581595515bc0a2ee960b06e7ec4bedd14df759",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"updateonuuid",
+								"f1bd757ee14cb01fa769fd94c1581595515bc0a2ee960b06e7ec4bedd14df759"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deleting Product on UUID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/products/deleteonuuid/f1bd757ee14cb01fa769fd94c1581595515bc0a2ee960b06e7ec4bedd14df759",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"deleteonuuid",
+								"f1bd757ee14cb01fa769fd94c1581595515bc0a2ee960b06e7ec4bedd14df759"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Deleting Product on ID",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/v1/products/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"products",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Others",
+			"item": [
+				{
+					"name": "Get Category Matrix Data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/others/categorydata",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"others",
+								"categorydata"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Brand Specific Scores",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/api/v1/others/branddata",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"others",
+								"branddata"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

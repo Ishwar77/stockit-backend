@@ -1,0 +1,12 @@
+{
+    "env": "NODE_ENV",
+    "debug": "DEBUG",
+    "secretkey": "APP_SECRETKEY",
+    "dbName": "DB_NAME", 
+    "dbUsername":"DB_USERNAME",
+    "dbPassword": "DB_PASSWORD",
+    "mailerApiKey":"SENDGRID_API_KEY",
+    "emailAddress": "EMAIL_ADDRESS",
+    "emailPassword": "EMAIL_PASSWORD",
+    "emailProvider": "EMAIL_PROVIDER"
+}
